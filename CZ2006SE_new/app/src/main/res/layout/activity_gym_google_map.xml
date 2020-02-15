@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GymGoogleMap">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/textbox_border"
+        android:id="@+id/infoTable">
+
+        <ImageView
+            android:id="@+id/gymImage2"
+            android:layout_width="94dp"
+            android:layout_height="153dp"
+            android:layout_alignParentLeft="true"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/url2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/gymContact2"
+            android:layout_toRightOf="@+id/gymLatitude2"
+            android:text="url"
+            android:textSize="10dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/gymId2"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="9dp"
+            android:layout_toRightOf="@+id/gymImage2"
+            android:fontFamily="@font/lemonbrush"
+            android:padding="10dp"
+            android:text="sample"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gymAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gymId2"
+            android:layout_alignLeft="@+id/gymId2"
+            android:fontFamily="@font/acme"
+            android:padding="10dp"
+            android:text="sample" />
+
+
+        <TextView
+            android:id="@+id/gymOpeningHours2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gymAddress2"
+            android:layout_alignLeft="@+id/gymId2"
+            android:fontFamily="@font/acme"
+            android:padding="10dp"
+            android:text="sample" />
+
+
+        <TextView
+            android:id="@+id/gymContact2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gymOpeningHours2"
+            android:layout_alignLeft="@+id/gymId2"
+            android:fontFamily="@font/acme"
+            android:padding="10dp"
+            android:text="sample" />
+        <TextView
+            android:id="@+id/gymLatitude2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gymContact2"
+            android:layout_alignLeft="@+id/gymId2"
+            android:padding="0dp"
+            android:text=""
+            android:textSize="0dp" />
+
+        <TextView
+            android:id="@+id/gymLongitude2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gymContact2"
+            android:layout_alignLeft="@+id/gymId2"
+            android:layout_toRightOf="@+id/gymLatitude2"
+            android:padding="0dp"
+            android:text=""
+            android:textSize="0dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoTable"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoogleMap"
+            android:textSize="15sp" />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:id="@+id/google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <Button
+            android:id="@+id/Parking_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="P"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_background"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

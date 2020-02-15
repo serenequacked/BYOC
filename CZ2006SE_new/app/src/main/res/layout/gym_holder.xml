@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/gymContact"
+                android:layout_toRightOf="@+id/gymLatitude"
+                android:text="url"
+                android:textSize="10dp"></TextView>
+
+            <ImageView
+                android:id="@+id/gymImage"
+                android:layout_width="94dp"
+                android:layout_height="153dp"
+                android:layout_alignParentLeft="true"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/gymId"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="9dp"
+                android:layout_toRightOf="@+id/gymImage"
+                android:fontFamily="@font/lemonbrush"
+                android:padding="10dp"
+                android:text="sample"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/gymAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gymId"
+                android:layout_alignLeft="@+id/gymId"
+                android:fontFamily="@font/acme"
+                android:padding="10dp"
+                android:text="sample" />
+
+
+            <TextView
+                android:id="@+id/gymOpeningHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gymAddress"
+                android:layout_alignLeft="@+id/gymId"
+                android:fontFamily="@font/acme"
+                android:padding="10dp"
+                android:text="sample" />
+
+
+            <TextView
+                android:id="@+id/gymContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gymOpeningHours"
+                android:layout_alignLeft="@+id/gymId"
+                android:fontFamily="@font/acme"
+                android:padding="10dp"
+                android:text="sample" />
+
+            <TextView
+                android:id="@+id/gymLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gymContact"
+                android:layout_alignLeft="@+id/gymId"
+                android:padding="0dp"
+                android:text=""
+                android:textSize="0dp" />
+
+            <TextView
+                android:id="@+id/gymLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gymContact"
+                android:layout_alignLeft="@+id/gymId"
+                android:layout_toRightOf="@+id/gymLatitude"
+                android:padding="0dp"
+                android:text=""
+                android:textSize="0dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+</androidx.cardview.widget.CardView>

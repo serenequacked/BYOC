@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/BMItext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lemonbrush"
+            android:text="Body Mass Index"
+            android:layout_marginTop="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmiInput"
+            android:layout_below="@+id/BMItext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/WeightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight: "
+                android:textSize="20sp"
+                android:layout_alignTop="@id/WeightInput"
+                android:layout_alignBottom="@+id/WeightInput"
+                android:gravity="center_vertical"
+                android:layout_alignEnd="@id/CommentsText"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/WeightInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/WeightText"
+                android:ems="8"
+                android:hint="Enter weight in kg"
+                android:inputType="number"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/HeightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height: "
+                android:textSize="20sp"
+                android:layout_alignBottom="@id/HeightInput"
+                android:layout_alignTop="@id/HeightInput"
+                android:gravity="center_vertical"
+                android:layout_alignEnd="@id/CommentsText"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/HeightInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:inputType="number"
+                android:hint="Enter height in cm"
+
+                android:layout_below="@id/WeightInput"
+                android:layout_marginTop="20dp"
+                android:layout_alignEnd="@id/WeightInput"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/BMIResultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI: "
+                android:textSize="20sp"
+                android:layout_alignTop="@id/BMIResultBox"
+                android:layout_alignBottom="@id/BMIResultBox"
+                android:gravity="center_vertical"
+                android:layout_alignEnd="@id/CommentsText"
+                android:textColor="@color/black"
+                />
+
+            <RelativeLayout
+                android:id="@+id/BMIResultBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/HeightInput"
+                android:layout_alignStart="@id/HeightInput"
+                android:layout_below="@id/HeightInput"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/BMIResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_alignBottom="@id/Calculate"
+                    android:background="@drawable/textbox_border"
+                    android:layout_toStartOf="@id/Calculate"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@id/Calculate"
+                    android:layout_marginRight="5dp"/>
+
+                <Button
+                    android:id="@+id/Calculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/clicked_background"
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/CommentsText"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Comments: "
+                android:textSize="20sp"
+                android:layout_below="@id/BMIResultText"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/Comments"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/CommentsText"
+                android:layout_alignTop="@id/CommentsText"
+                android:layout_alignEnd="@id/WeightInput"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:background="@drawable/textbox_border"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bmiInput"
+            android:layout_alignEnd="@id/bmiInput"
+            android:layout_alignStart="@id/bmiInput"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/ViewBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="View BMI History"
+                android:layout_below="@id/Save"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/clicked_background"
+                android:padding="5dp"/>
+
+            <Button
+                android:id="@+id/Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Results"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/clicked_background"
+                android:padding="5dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
