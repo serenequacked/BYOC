@@ -1,6 +1,7 @@
 # Brief description: 
 
 Beverages are an essential aspect of our lives. However, the plastic and paper cups used to hold beverages are taking a toll on the environment. These cups are non-biodegradable and non-recyclable. As such, these materials pile up in our landfills where incineration emits harmful gases to the environment. 
+
 We want to make use of collapsible cups to emphasise the idea of “Bring Your Own Cup”, hence, reducing plastic waste.
 However, despite the benefits of using collapsible cups, the idea of using them is still not well-integrated into our daily lives. The probable reason behind this is the additional effort required to pack collapsible cups, the hassle to cleanse the cup after every usage and the inaccessibility to obtain a cup.
 
