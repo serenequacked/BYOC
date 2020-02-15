@@ -64,7 +64,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="5 week"
+        android:text="5 days"
         android:background="#0091EA"
         android:textColor="#fff"
         android:padding="8dp"
