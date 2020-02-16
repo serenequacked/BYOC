@@ -73,6 +73,13 @@ public class HomePage extends FragmentActivity implements OnMapReadyCallback {
                 openActivity2();
             }
         });
+        Button historybutton = (Button) findViewById(R.id.History);
+        historybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity5();
+            }
+        });
 
 
 
@@ -133,6 +140,11 @@ public class HomePage extends FragmentActivity implements OnMapReadyCallback {
         startActivity(intent);
     }
 
+    public void openActivity5(){
+        Intent intent = new Intent(this,HistoryActivity.class);
+        startActivity(intent);
+    }
+
     private void fetchLastLocation() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
         {
@@ -173,6 +185,8 @@ public class HomePage extends FragmentActivity implements OnMapReadyCallback {
         LatLng latLng6 = new LatLng(1.3494879,103.6824651);
         LatLng latLng7 = new LatLng(1.3492627,103.6751748);
         LatLng latLng8 = new LatLng(1.3490784,103.687208);
+        LatLng latLng9 = new LatLng(1.3472056,103.679839);
+        LatLng latLng10 = new LatLng(1.3426965,103.6799275);
         map.addMarker(new MarkerOptions().position(latLng2).title("Lee Wee Nam Library"));
         map.addMarker(new MarkerOptions().position(latLng3).title("Nanyang Audi"));
         map.addMarker(new MarkerOptions().position(latLng4).title("NIE"));
@@ -180,6 +194,8 @@ public class HomePage extends FragmentActivity implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(latLng6).title("School of ADM"));
         map.addMarker(new MarkerOptions().position(latLng7).title("North Hill"));
         map.addMarker(new MarkerOptions().position(latLng8).title("The Wave"));
+        map.addMarker(new MarkerOptions().position(latLng9).title("North Spine Food Court"));
+        map.addMarker(new MarkerOptions().position(latLng10).title("South Spine Kou Fu"));
         map.animateCamera(CameraUpdateFactory.newLatLng(current));
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(current,17));
         map.addMarker(markerOptions);
