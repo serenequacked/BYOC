@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f1ee"
+    android:orientation="vertical"
+    tools:context=".RentalPeriod2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/orangerectangle"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/StartDateHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Rental Start Date:"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:text="Sunday 15th Feb 2020"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="45dp"
+        android:background="#ffff"
+        android:padding="28dp"
+        android:text="Choose your period of rental:"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="1 Day"
+        android:background="#ffffff"
+        android:layout_marginTop="-20dp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/day"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="1 Week"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp"
+        android:id="@+id/week"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="1 Month"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/month"
+        />
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_marginLeft="300dp"
+        android:layout_height="90dp"
+        android:text="1 Week"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp"
+        android:background="@drawable/rightarrowwithbackground"
+        android:id="@+id/rightarrow"
+        />
+
+
+</LinearLayout>

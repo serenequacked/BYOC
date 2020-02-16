@@ -6,25 +6,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/layout_result"
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:background="@android:color/holo_orange_light"
+
+    <TextView
+        android:id="@+id/txt_result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Rent successfully"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="28sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/orangerectangle"
+        android:padding="8dp">
 
         <TextView
-            android:id="@+id/txt_result"
-            android:text="Rent successfully"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:layout_width="match_parent"
+            android:id="@+id/StartDateHeading"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:layout_centerHorizontal="true"
+            android:text="Rental Start Date:"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:text="Sunday 15th Feb 2020"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/EndDateHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Date"
+            android:text="Rental End Date:"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/EndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/EndDateHeading"
+            android:text="Sunday 22nd Feb 2020"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
 
 </RelativeLayout>
+
+
+
+
+

@@ -18,9 +18,9 @@ public class RentSuccess extends AppCompatActivity {
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), HomePage.class);
                 startActivity(i);
             }
-        }, 2000);
+        }, 7000);
     }
 }

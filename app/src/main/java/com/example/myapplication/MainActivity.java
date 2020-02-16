@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
     public void handleResult(Result rawResult) {
         //txtResult.setText(rawResult.getText());
         //scannerView.startCamera();
-        Intent i = new Intent(getApplicationContext(), ChoosePeriodActivity.class);
+        Intent i = new Intent(getApplicationContext(), RentalPeriod2.class);
         startActivity(i);
     }
 }
